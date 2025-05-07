@@ -174,3 +174,25 @@ E:\Dropbox\[ALG'15] Materials\---- Staff only ----\Projects\Speaker Identificati
 E:\Dropbox\[ALG'15] Materials\---- Staff only ----\Projects\Speaker Identification\FIX1 - Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\NAudio.dll
 E:\Dropbox\[ALG'15] Materials\---- Staff only ----\Projects\Speaker Identification\FIX1 - Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\NAudio.WindowsMediaFormat.dll
 E:\Dropbox\[ALG'15] Materials\---- Staff only ----\Projects\Speaker Identification\FIX1 - Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\NAudio.xml
+C:\Speaker - Identification\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\Recorder.exe.config
+C:\Speaker - Identification\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\Recorder.exe
+C:\Speaker - Identification\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\Recorder.pdb
+C:\Speaker - Identification\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\AForge.dll
+C:\Speaker - Identification\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\AForge.Math.dll
+C:\Speaker - Identification\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\MWArray.dll
+C:\Speaker - Identification\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\SharpDX.DirectSound.dll
+C:\Speaker - Identification\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\SharpDX.dll
+C:\Speaker - Identification\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\AForge.xml
+C:\Speaker - Identification\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\AForge.Math.xml
+C:\Speaker - Identification\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\MWArray.xml
+C:\Speaker - Identification\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\NAudio.xml
+C:\Speaker - Identification\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\SharpDX.xml
+C:\Speaker - Identification\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\SharpDX.DirectSound.xml
+C:\Speaker - Identification\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.csproj.AssemblyReference.cache
+C:\Speaker - Identification\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.MainForm.resources
+C:\Speaker - Identification\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.Properties.Resources.resources
+C:\Speaker - Identification\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.csproj.GenerateResource.cache
+C:\Speaker - Identification\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.csproj.CoreCompileInputs.cache
+C:\Speaker - Identification\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.csproj.Up2Date
+C:\Speaker - Identification\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.exe
+C:\Speaker - Identification\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.pdb

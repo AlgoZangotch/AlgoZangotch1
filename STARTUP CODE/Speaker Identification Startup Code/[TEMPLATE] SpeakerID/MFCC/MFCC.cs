@@ -204,5 +204,23 @@ namespace Recorder.MFCC
         }
         #endregion
 
+        /// <summary>
+        /// Calculates the Euclidean distance between two frames.
+        /// </summary>
+        /// <param name="Fram1">The first frame.</param>
+        /// <param name="Frame2">The second frame.</param>
+        /// <returns>The Euclidean distance between the feature vectors of the two frames.</returns>
+        public static double CalcFramesDistance(MFCCFrame Frame1, MFCCFrame Frame2)
+        {
+            var Features1 = Frame1.Features;
+            var Features2 = Frame2.Features;
+            double Sum = 0;
+            for (int i = 0; i < 13; i++)
+            {
+                Sum += (Features1[i] - Features2[i]) * (Features1[i] - Features2[i]);
+            }
+
+            return Math.Sqrt(Sum);
+        }
     }
 }
