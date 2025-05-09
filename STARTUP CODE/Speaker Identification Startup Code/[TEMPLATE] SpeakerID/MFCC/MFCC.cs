@@ -1,8 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace Recorder.MFCC
 {
@@ -217,10 +218,67 @@ namespace Recorder.MFCC
             double Sum = 0;
             for (int i = 0; i < 13; i++)
             {
-                Sum += (Features1[i] - Features2[i]) * (Features1[i] - Features2[i]);
+                double diff = Features1[i] - Features2[i];
+                Sum += diff * diff;
             }
-
             return Math.Sqrt(Sum);
         }
+
+        public static double IterativeMatch(Sequence templateSeq, Sequence inputSeq)   // O(N * M) time & Memory complexity
+        {
+            int M = inputSeq.Frames.Length, N = templateSeq.Frames.Length;
+
+            double[,] dp = new double[N + 1, M + 1];
+
+            double Infinity = double.MaxValue;
+
+            for (int tempInd = 0; tempInd < N; tempInd++)
+                dp[tempInd, M] = Infinity;
+
+
+            for (int inputInd = 0; inputInd <= M; inputInd++)
+                dp[N, inputInd] = 0;
+
+            M--;
+            for (int tempInd = N - 1; tempInd >= 0; --tempInd)
+            {
+                for (int inputInd = M; inputInd >= 0; --inputInd)
+                {
+                    ref double dis = ref dp[tempInd, inputInd];
+
+                    if(dp[inputInd + 1, tempInd] == Infinity)   //prevent overflow
+                    {
+                        dis = Infinity;
+                    }
+                    else
+                        dis = dp[inputInd + 1, tempInd] + CalcFramesDistance(inputSeq.Frames[inputInd], templateSeq.Frames[tempInd]);    // Match the current input frame
+
+                    double dis2 = dp[inputInd, tempInd + 1]; // skip curr template frame
+
+                    if (dis > dis2)
+                        dis = dis2;
+                }
+            }
+
+            return dp[0, 0];
+        }
+
+        public static Sequence GetNearestSequence(Sequence[] templateSequences, Sequence inputSequence)
+        {
+            double minDistance = double.MaxValue;
+            Sequence nearestSequence = null;
+
+            foreach (Sequence currSequence in templateSequences)
+            {
+                double distance = IterativeMatch(currSequence, inputSequence);
+                if (distance < minDistance)
+                {
+                    minDistance = distance;
+                    nearestSequence = currSequence;
+                }
+            }
+            return nearestSequence;
+        }
+
     }
 }
