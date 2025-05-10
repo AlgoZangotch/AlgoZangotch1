@@ -279,6 +279,5 @@ namespace Recorder.MFCC
             }
             return nearestSequence;
         }
-
     }
 }
