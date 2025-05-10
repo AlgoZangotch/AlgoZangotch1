@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Recorder.GUI;
+using System;
 using System.Windows.Forms;
 
 namespace Recorder
@@ -11,9 +12,15 @@ namespace Recorder
             if (Environment.OSVersion.Version.Major >= 6)
                 SetProcessDPIAware();
 
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+
+            TestForm testForm = new TestForm();
+
+            testForm.Show();
+
+            Application.Run();
         }
 
         [System.Runtime.InteropServices.DllImport("user32.dll")]

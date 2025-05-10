@@ -222,5 +222,7 @@ namespace Recorder.MFCC
 
             return Math.Sqrt(Sum);
         }
+
+        public static 
     }
 }

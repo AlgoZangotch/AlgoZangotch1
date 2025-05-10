@@ -196,3 +196,26 @@ C:\Speaker - Identification\AlgoZangotch1\STARTUP CODE\Speaker Identification St
 C:\Speaker - Identification\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.csproj.Up2Date
 C:\Speaker - Identification\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.exe
 C:\Speaker - Identification\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.pdb
+D:\FCIS\Junior\Second Semester\Algo\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\Recorder.exe.config
+D:\FCIS\Junior\Second Semester\Algo\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\Recorder.exe
+D:\FCIS\Junior\Second Semester\Algo\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\Recorder.pdb
+D:\FCIS\Junior\Second Semester\Algo\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\AForge.dll
+D:\FCIS\Junior\Second Semester\Algo\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\AForge.Math.dll
+D:\FCIS\Junior\Second Semester\Algo\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\MWArray.dll
+D:\FCIS\Junior\Second Semester\Algo\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\SharpDX.DirectSound.dll
+D:\FCIS\Junior\Second Semester\Algo\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\SharpDX.dll
+D:\FCIS\Junior\Second Semester\Algo\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\AForge.xml
+D:\FCIS\Junior\Second Semester\Algo\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\AForge.Math.xml
+D:\FCIS\Junior\Second Semester\Algo\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\MWArray.xml
+D:\FCIS\Junior\Second Semester\Algo\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\NAudio.xml
+D:\FCIS\Junior\Second Semester\Algo\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\SharpDX.xml
+D:\FCIS\Junior\Second Semester\Algo\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\SharpDX.DirectSound.xml
+D:\FCIS\Junior\Second Semester\Algo\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.csproj.AssemblyReference.cache
+D:\FCIS\Junior\Second Semester\Algo\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.MainForm.resources
+D:\FCIS\Junior\Second Semester\Algo\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.Properties.Resources.resources
+D:\FCIS\Junior\Second Semester\Algo\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.csproj.GenerateResource.cache
+D:\FCIS\Junior\Second Semester\Algo\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.csproj.CoreCompileInputs.cache
+D:\FCIS\Junior\Second Semester\Algo\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.csproj.Up2Date
+D:\FCIS\Junior\Second Semester\Algo\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.exe
+D:\FCIS\Junior\Second Semester\Algo\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.pdb
+D:\FCIS\Junior\Second Semester\Algo\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.GUI.TestForm.resources
