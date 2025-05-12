@@ -279,5 +279,148 @@ namespace Recorder.MFCC
             }
             return nearestSequence;
         }
+
+        public static double beamSearch(Sequence templateSeq, Sequence inputSeq, double T)
+        {
+
+            int M = inputSeq.Frames.Length, N = templateSeq.Frames.Length;
+
+            double[,] dp = new double[N + 1, M + 1];
+
+            double Infinity = double.MaxValue;
+
+            for (int tempInd = 0; tempInd < N; tempInd++)
+                dp[tempInd, M] = Infinity;
+
+
+            for (int inputInd = 0; inputInd <= M; inputInd++)
+                dp[N, inputInd] = 0;
+
+            M--;
+
+            for (int tempInd = N - 1; tempInd >= 0; --tempInd)
+            {
+                double bCost = Infinity;
+
+                for (int inputInd = M; inputInd >= 0; --inputInd)
+                {
+                    ref double dis = ref dp[tempInd, inputInd];
+
+                    if (dp[inputInd + 1, tempInd] == Infinity)   //prevent overflow
+                    {
+                        dis = Infinity;
+                    }
+                    else
+                        dis = dp[inputInd + 1, tempInd] + CalcFramesDistance(inputSeq.Frames[inputInd], templateSeq.Frames[tempInd]);    // Match the current input frame
+
+                    double dis2 = dp[inputInd, tempInd + 1]; // skip curr template frame
+
+                    if (dis > dis2)
+                        dis = dis2;
+                    
+                    if(dis < bCost)
+                    {
+                        bCost= dis;
+                    }
+                }
+
+                for (int inputInd = M;inputInd >= 0; --inputInd)
+                {
+                    if (dp[tempInd,inputInd] > bCost + T)
+                    {
+                        dp[tempInd,inputInd] = Infinity;
+                    }
+                }
+            }
+
+            return dp[0, 0] == Infinity ? double.MaxValue : dp[0, 0];
+        }
+
+
+        public static Sequence asyncBeamSearch(Sequence[] templateSequences, Sequence inputSequence, double T)
+        {
+
+            int M = inputSequence.Frames.Length;
+            int numTemplates = templateSequences.Length;
+            int[] templateLengths = templateSequences.Select(seq => seq.Frames.Length).ToArray();
+
+            // Initialize DP arrays per template
+            double[][,] dpArrays = new double[numTemplates][,];
+
+            for (int t = 0; t < numTemplates; t++)
+            {
+                int N = templateLengths[t];
+                dpArrays[t] = new double[N + 1, M + 1];
+
+                for (int tempInd = 0; tempInd < N; tempInd++)
+                    dpArrays[t][tempInd, M] = double.MaxValue;
+
+                for (int inputInd = 0; inputInd <= M; inputInd++)
+                    dpArrays[t][N, inputInd] = 0;
+            }
+
+            M--;
+
+            for (int tempInd = 0; tempInd < templateLengths.Max(); tempInd++)
+            {
+                // Global best cost across all templates for this frame
+                double globalBest = double.MaxValue;
+
+                // First, compute the new distances
+                for (int t = 0; t < numTemplates; t++)
+                {
+                    if (tempInd >= templateLengths[t]) continue;
+                    var dp = dpArrays[t];
+                    var templateSeq = templateSequences[t];
+
+                    for (int inputInd = M; inputInd >= 0; inputInd--)
+                    {
+                        if (dp[tempInd, inputInd] == double.MaxValue)
+                        {
+                            if (inputInd + 1 > M || dp[tempInd, inputInd + 1] == double.MaxValue)
+                                dp[tempInd, inputInd] = double.MaxValue;
+                            else
+                                dp[tempInd, inputInd] = dp[tempInd + 1, inputInd] + CalcFramesDistance(inputSequence.Frames[inputInd], templateSeq.Frames[tempInd]);
+
+                            double dis2 = dp[tempInd + 1, inputInd];
+                            if (dp[tempInd, inputInd] > dis2)
+                                dp[tempInd, inputInd] = dis2;
+                        }
+
+                        if (dp[tempInd, inputInd] < globalBest)
+                            globalBest = dp[tempInd, inputInd];
+                    }
+                }
+
+                // Then prune across all templates using globalBest + T
+                for (int t = 0; t < numTemplates; t++)
+                {
+                    if (tempInd >= templateLengths[t]) continue;
+                    var dp = dpArrays[t];
+
+                    for (int inputInd = M; inputInd >= 0; inputInd--)
+                    {
+                        if (dp[tempInd, inputInd] > globalBest + T)
+                            dp[tempInd, inputInd] = double.MaxValue;
+                    }
+                }
+            }
+
+            // Get best sequence by checking final DP values
+            double bestScore = double.MaxValue;
+            Sequence bestSequence = null;
+
+            for (int t = 0; t < numTemplates; t++)
+            {
+                double score = dpArrays[t][0, 0];
+                if (score < bestScore)
+                {
+                    bestScore = score;
+                    bestSequence = templateSequences[t];
+                }
+            }
+
+            return bestSequence;
+        }
     }
 }

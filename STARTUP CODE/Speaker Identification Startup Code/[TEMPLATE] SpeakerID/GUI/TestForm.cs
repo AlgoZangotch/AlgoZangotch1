@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Recorder.MFCC;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -6,8 +7,9 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
-
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Recorder.GUI
 {
@@ -44,6 +46,9 @@ namespace Recorder.GUI
 
         private void button3_Click(object sender, EventArgs e)
         {
+
+            string text = textBox1.Text;
+            string T = Regex.Match(text, @"\d+").Value;
 
         }
     }

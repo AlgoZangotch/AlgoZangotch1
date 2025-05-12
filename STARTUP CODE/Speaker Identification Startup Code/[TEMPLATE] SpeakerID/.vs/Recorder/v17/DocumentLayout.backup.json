@@ -3,36 +3,36 @@
   "WorkspaceRootPath": "D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A3C56C4A-57FC-48A4-A45A-DA12304D06A9}|Recorder.csproj|d:\\fcis\\junior\\second semester\\algo\\algozangotch1\\startup code\\speaker identification startup code\\[template] speakerid\\gui\\testform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A3C56C4A-57FC-48A4-A45A-DA12304D06A9}|Recorder.csproj|D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\gui\\testform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A3C56C4A-57FC-48A4-A45A-DA12304D06A9}|Recorder.csproj|solutionrelative:gui\\testform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3C56C4A-57FC-48A4-A45A-DA12304D06A9}|Recorder.csproj|D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\mfcc\\mfcc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3C56C4A-57FC-48A4-A45A-DA12304D06A9}|Recorder.csproj|solutionrelative:mfcc\\mfcc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3C56C4A-57FC-48A4-A45A-DA12304D06A9}|Recorder.csproj|D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\gui\\testform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A3C56C4A-57FC-48A4-A45A-DA12304D06A9}|Recorder.csproj|solutionrelative:gui\\testform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A3C56C4A-57FC-48A4-A45A-DA12304D06A9}|Recorder.csproj|d:\\fcis\\junior\\second semester\\algo\\algozangotch1\\startup code\\speaker identification startup code\\[template] speakerid\\testcaseloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A3C56C4A-57FC-48A4-A45A-DA12304D06A9}|Recorder.csproj|solutionrelative:testcaseloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3C56C4A-57FC-48A4-A45A-DA12304D06A9}|Recorder.csproj|d:\\fcis\\junior\\second semester\\algo\\algozangotch1\\startup code\\speaker identification startup code\\[template] speakerid\\gui\\testform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A3C56C4A-57FC-48A4-A45A-DA12304D06A9}|Recorder.csproj|D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\gui\\testform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A3C56C4A-57FC-48A4-A45A-DA12304D06A9}|Recorder.csproj|solutionrelative:gui\\testform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3C56C4A-57FC-48A4-A45A-DA12304D06A9}|Recorder.csproj|d:\\fcis\\junior\\second semester\\algo\\algozangotch1\\startup code\\speaker identification startup code\\[template] speakerid\\gui\\testform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A3C56C4A-57FC-48A4-A45A-DA12304D06A9}|Recorder.csproj|solutionrelative:gui\\testform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A3C56C4A-57FC-48A4-A45A-DA12304D06A9}|Recorder.csproj|D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\mainfuctions\\featuresloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A3C56C4A-57FC-48A4-A45A-DA12304D06A9}|Recorder.csproj|solutionrelative:mainfuctions\\featuresloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A3C56C4A-57FC-48A4-A45A-DA12304D06A9}|Recorder.csproj|D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\gui\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3C56C4A-57FC-48A4-A45A-DA12304D06A9}|Recorder.csproj|solutionrelative:gui\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A3C56C4A-57FC-48A4-A45A-DA12304D06A9}|Recorder.csproj|D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\gui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A3C56C4A-57FC-48A4-A45A-DA12304D06A9}|Recorder.csproj|solutionrelative:gui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3C56C4A-57FC-48A4-A45A-DA12304D06A9}|Recorder.csproj|D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\mainfuctions\\audiooperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3C56C4A-57FC-48A4-A45A-DA12304D06A9}|Recorder.csproj|solutionrelative:mainfuctions\\audiooperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3C56C4A-57FC-48A4-A45A-DA12304D06A9}|Recorder.csproj|D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3C56C4A-57FC-48A4-A45A-DA12304D06A9}|Recorder.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,16 +42,42 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
+              "Title": "MainForm.Designer.cs",
+              "DocumentMoniker": "D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\GUI\\MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "GUI\\MainForm.Designer.cs",
+              "ToolTip": "D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\GUI\\MainForm.Designer.cs",
+              "RelativeToolTip": "GUI\\MainForm.Designer.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T13:09:16.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MFCC.cs",
+              "DocumentMoniker": "D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\MFCC\\MFCC.cs",
+              "RelativeDocumentMoniker": "MFCC\\MFCC.cs",
+              "ToolTip": "D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\MFCC\\MFCC.cs",
+              "RelativeToolTip": "MFCC\\MFCC.cs",
+              "ViewState": "AgIAAEkBAAAAAAAAAAAnwFcBAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T12:52:25.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "TestForm.Designer.cs",
               "DocumentMoniker": "D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\GUI\\TestForm.Designer.cs",
               "RelativeDocumentMoniker": "GUI\\TestForm.Designer.cs",
-              "ToolTip": "D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\GUI\\TestForm.Designer.cs*",
-              "RelativeToolTip": "GUI\\TestForm.Designer.cs*",
+              "ToolTip": "D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\GUI\\TestForm.Designer.cs",
+              "RelativeToolTip": "GUI\\TestForm.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-10T12:40:51.619Z",
@@ -59,45 +85,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "TestcaseLoader.cs",
               "DocumentMoniker": "D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\TestcaseLoader.cs",
               "RelativeDocumentMoniker": "TestcaseLoader.cs",
               "ToolTip": "D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\TestcaseLoader.cs",
               "RelativeToolTip": "TestcaseLoader.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAIwBQAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-10T10:57:55.975Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "TestForm.cs [Design]",
               "DocumentMoniker": "D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\GUI\\TestForm.cs",
               "RelativeDocumentMoniker": "GUI\\TestForm.cs",
-              "ToolTip": "D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\GUI\\TestForm.cs [Design]*",
-              "RelativeToolTip": "GUI\\TestForm.cs [Design]*",
+              "ToolTip": "D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\GUI\\TestForm.cs [Design]",
+              "RelativeToolTip": "GUI\\TestForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-10T10:09:19.772Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "FeaturesLoader.cs",
               "DocumentMoniker": "D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\MainFuctions\\FeaturesLoader.cs",
               "RelativeDocumentMoniker": "MainFuctions\\FeaturesLoader.cs",
               "ToolTip": "D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\MainFuctions\\FeaturesLoader.cs",
               "RelativeToolTip": "MainFuctions\\FeaturesLoader.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwDYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-09T20:30:34.122Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "MainForm.cs",
               "DocumentMoniker": "D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\GUI\\MainForm.cs",
               "RelativeDocumentMoniker": "GUI\\MainForm.cs",
@@ -114,37 +140,11 @@
               "Title": "TestForm.cs",
               "DocumentMoniker": "D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\GUI\\TestForm.cs",
               "RelativeDocumentMoniker": "GUI\\TestForm.cs",
-              "ToolTip": "D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\GUI\\TestForm.cs*",
-              "RelativeToolTip": "GUI\\TestForm.cs*",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwCEAAAA/AAAAAAAAAA==",
+              "ToolTip": "D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\GUI\\TestForm.cs",
+              "RelativeToolTip": "GUI\\TestForm.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwDAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-09T20:15:52.607Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T19:02:03.087Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AudioOperations.cs",
-              "DocumentMoniker": "D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\MainFuctions\\AudioOperations.cs",
-              "RelativeDocumentMoniker": "MainFuctions\\AudioOperations.cs",
-              "ToolTip": "D:\\FCIS\\Junior\\Second Semester\\Algo\\AlgoZangotch1\\STARTUP CODE\\Speaker Identification Startup Code\\[TEMPLATE] SpeakerID\\MainFuctions\\AudioOperations.cs",
-              "RelativeToolTip": "MainFuctions\\AudioOperations.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:47:18.059Z",
               "EditorCaption": ""
             }
           ]
