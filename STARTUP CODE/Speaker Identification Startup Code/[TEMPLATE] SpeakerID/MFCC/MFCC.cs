@@ -228,7 +228,7 @@ namespace Recorder.MFCC
         /// <param name="templateSeq">Template Sequence</param>
         /// <param name="inputSeq">Input Sequence</param>
         /// <returns>the distance between the Template Sequence and the Input Sequence</returns>
-        public static double DTWMatch(Sequence templateSeq, Sequence inputSeq)   // O(N * M) time & Memory complexity
+        public static double DTWMatch(Sequence templateSeq, Sequence inputSeq)
         {
             // Optimized Version with O(N) Memory complexity
             MFCCFrame[] templateFrames = templateSeq.Frames, inputFrames = inputSeq.Frames;
@@ -254,10 +254,10 @@ namespace Recorder.MFCC
                 {
                     MinDistance = PrevCol[templateIdx];   // Stretching
 
-                    if (MinDistance < PrevCol[templateIdx + 1])   // One by One Matching
+                    if (MinDistance > PrevCol[templateIdx + 1])   // One by One Matching
                         MinDistance = PrevCol[templateIdx + 1];
 
-                    if (MinDistance < PrevCol[templateIdx + 2])   // Shrinking
+                    if (MinDistance > PrevCol[templateIdx + 2])   // Shrinking
                         MinDistance = PrevCol[templateIdx + 2];
 
                     CurrentCol[templateIdx] = EuclideanDistance(templateFrames[templateIdx].Features, currFeatures) + MinDistance;
