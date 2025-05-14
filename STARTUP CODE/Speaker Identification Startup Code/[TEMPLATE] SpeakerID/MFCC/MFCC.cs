@@ -426,5 +426,51 @@ namespace Recorder.MFCC
 
             return bestSequence;
         }
+
+        public static int TimeSynchronousSearch(List<Sequence> templates, IEnumerable<MFCCFrame> inputStream,)
+        {
+            int T = templates.Count;
+            const double Infinity = double.PositiveInfinity;
+
+            // Current alignment score for each template
+            double[] scores = new double[T];
+            int[] positions = new int[T];  // position in each template
+            for (int i = 0; i < T; i++) scores[i] = 0;
+
+            foreach (var inputFrame in inputStream)
+            {
+                for (int t = 0; t < T; t++)
+                {
+                    Sequence template = templates[t];
+                    int pos = positions[t];
+
+                    if (pos >= template.Frames.Length)
+                    {
+                        continue; // this template has been fully matched
+                    }
+
+                    double cost = EuclideanDistance(template.Frames[pos].Features, inputFrame.Features);
+                    scores[t] += cost;
+                    positions[t]++;
+                }
+            }
+
+            // Return index of best-matching template
+            int bestTemplate = -1;
+            double bestScore = Infinity;
+            for (int t = 0; t < T; t++)
+            {
+                if (scores[t] < bestScore)
+                {
+                    bestScore = scores[t];
+                    bestTemplate = t;
+                }
+            }
+
+            return bestTemplate;
+        }
+
     }
+
+
 }
