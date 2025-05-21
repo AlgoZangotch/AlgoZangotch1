@@ -107,7 +107,55 @@ namespace Recorder.MFCC
         /// <returns>the distance between the Template Sequence and the Input Sequence</returns>
         public static double BeamSearchMatch(Sequence templateSeq, Sequence inputSeq, double threshold)
         {
-            throw new NotImplementedException("BeamSearchMatch is not implemented yet.");
+            // Optimized Version with O(N) Memory complexity and O(N*M) Time complexity
+            MFCCFrame[] templateFrames = templateSeq.Frames, inputFrames = inputSeq.Frames;
+            int N = templateFrames.Length, M = inputFrames.Length;
+            const double Infinity = double.PositiveInfinity;
+            double[] currCol = new double[N], newCol = new double[N];
+
+            // Initialize the last column (starting point)
+            currCol[N - 1] = EuclideanDistance(templateFrames[N - 1].Features, inputFrames[M - 1].Features);
+            currCol[N - 2] = EuclideanDistance(templateFrames[N - 2].Features, inputFrames[M - 1].Features);
+            for (int templateIdx = 0; templateIdx + 2 < N; ++templateIdx)
+                currCol[templateIdx] = Infinity;
+
+            for (int inputIdx = M - 2; inputIdx >= 0; --inputIdx)
+            {
+                double[] currFeatures = inputFrames[inputIdx].Features;
+                newCol[N - 1] = EuclideanDistance(templateFrames[N - 1].Features, inputFrames[inputIdx].Features) + currCol[N - 1];
+
+                double bestDistance = Infinity, minDistance = (currCol[N - 1] < currCol[N - 2] ? currCol[N - 1] : currCol[N - 2]);   // Min(currCol[N-1], currCol[N-2])
+                newCol[N - 2] = EuclideanDistance(templateFrames[N - 2].Features, inputFrames[inputIdx].Features) + minDistance;
+
+                for (int templateIdx = 0; templateIdx + 2 < N; ++templateIdx)
+                {
+                    minDistance = currCol[templateIdx];   // Stretching
+
+                    if (minDistance > currCol[templateIdx + 1])   // One by One Matching
+                        minDistance = currCol[templateIdx + 1];
+
+                    if (minDistance > currCol[templateIdx + 2])   // Shrinking
+                        minDistance = currCol[templateIdx + 2];
+
+                    newCol[templateIdx] = EuclideanDistance(templateFrames[templateIdx].Features, currFeatures) + minDistance;
+
+                    if (newCol[templateIdx] < bestDistance)
+                        bestDistance = newCol[templateIdx];
+                }
+
+                bestDistance += threshold;
+                for (int templateIdx = 0; templateIdx < N; ++templateIdx)
+                {
+                    if (newCol[templateIdx] > bestDistance)
+                        newCol[templateIdx] = Infinity;
+                }
+
+                // Swapping
+                double[] temp = newCol;
+                newCol = currCol;
+                currCol = temp;
+            }
+            return currCol[0];
         }
 
         /// <summary>
