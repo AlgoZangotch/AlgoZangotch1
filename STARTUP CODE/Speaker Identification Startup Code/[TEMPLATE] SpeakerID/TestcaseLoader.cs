@@ -5,9 +5,10 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
+
 namespace Recorder
 {
-    struct User
+    public struct User
     {
         public string UserName;
         public List<AudioSignal> UserTemplates;

@@ -219,3 +219,28 @@ D:\FCIS\Junior\Second Semester\Algo\AlgoZangotch1\STARTUP CODE\Speaker Identific
 D:\FCIS\Junior\Second Semester\Algo\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.exe
 D:\FCIS\Junior\Second Semester\Algo\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.pdb
 D:\FCIS\Junior\Second Semester\Algo\AlgoZangotch1\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.GUI.TestForm.resources
+E:\algo\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\Recorder.exe.config
+E:\algo\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\Recorder.exe
+E:\algo\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\Recorder.pdb
+E:\algo\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\AForge.dll
+E:\algo\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\AForge.Math.dll
+E:\algo\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\SharpDX.DirectSound.dll
+E:\algo\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\SharpDX.dll
+E:\algo\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\AForge.xml
+E:\algo\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\AForge.Math.xml
+E:\algo\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\NAudio.xml
+E:\algo\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\SharpDX.xml
+E:\algo\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\SharpDX.DirectSound.xml
+E:\algo\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.csproj.AssemblyReference.cache
+E:\algo\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.MainForm.resources
+E:\algo\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.GUI.TestForm.resources
+E:\algo\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.Properties.Resources.resources
+E:\algo\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.csproj.GenerateResource.cache
+E:\algo\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.csproj.CoreCompileInputs.cache
+E:\algo\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.csproj.CopyComplete
+E:\algo\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.exe
+E:\algo\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\obj\x86\Debug\Recorder.pdb
+E:\algo\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\MWArray.dll
+E:\algo\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\MWArray.xml
+E:\algo\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\Newtonsoft.Json.dll
+E:\algo\STARTUP CODE\Speaker Identification Startup Code\[TEMPLATE] SpeakerID\bin\Debug\Newtonsoft.Json.xml

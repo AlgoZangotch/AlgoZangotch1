@@ -34,7 +34,7 @@ namespace Recorder.MFCC
         /// <returns>the distance between the Template Sequence and the Input Sequence</returns>
         public static double Match(Sequence templateSeq, Sequence inputSeq)
         {
-            // Optimized Version with O(N) Memory complexity and O(N * M) Time complexity
+            // Optimized Version with O(N) Memory complexity and O(N*M) Time complexity
             MFCCFrame[] templateFrames = templateSeq.Frames, inputFrames = inputSeq.Frames;
             int N = templateFrames.Length, M = inputFrames.Length;
             const double Infinity = double.PositiveInfinity;
@@ -63,7 +63,7 @@ namespace Recorder.MFCC
 
                     if (minDistance > currCol[templateIdx + 2])   // Shrinking
                         minDistance = currCol[templateIdx + 2];
-                                        
+
                     newCol[templateIdx] = EuclideanDistance(templateFrames[templateIdx].Features, currFeatures) + minDistance;
                 }
 
@@ -93,46 +93,61 @@ namespace Recorder.MFCC
         /// <param name="inputSeq">Input Sequence</param>
         /// <param name="width">Width of the search path</param>
         /// <returns>the distance between the Template Sequence and the Input Sequence</returns>
-        public static double LSPMatch(Sequence templateSeq, Sequence inputSeq, int width)
+        public static double LSPMatch(Sequence templateSeq, Sequence inputSeq, int W)
         {
-            // Optimized Version with O(N) Memory complexity and O(N * M) Time complexity
+            // Optimized Version with O(N*W) Time complexity and O(N) Space complexity
             MFCCFrame[] templateFrames = templateSeq.Frames, inputFrames = inputSeq.Frames;
             int N = templateFrames.Length, M = inputFrames.Length;
             const double Infinity = double.PositiveInfinity;
+
             double[] currCol = new double[N], newCol = new double[N];
 
-            // Initialize the last column (starting point)
+            for (int templateIdx = 0; templateIdx < N; ++templateIdx)
+            {
+                currCol[templateIdx] = Infinity;
+                newCol[templateIdx] = Infinity;
+            }
+
             currCol[N - 1] = EuclideanDistance(templateFrames[N - 1].Features, inputFrames[M - 1].Features);
             currCol[N - 2] = EuclideanDistance(templateFrames[N - 2].Features, inputFrames[M - 1].Features);
-            for (int templateIdx = 0; templateIdx + 2 < N; ++templateIdx)
-                currCol[templateIdx] = Infinity;
 
             for (int inputIdx = M - 2; inputIdx >= 0; --inputIdx)
             {
+                int diagonalPos = N - 1 - (M - 1 - inputIdx);
+
+                int startIdx = Math.Max(0, diagonalPos - W);
+                int endIdx = Math.Min(N - 1, diagonalPos + W);
+
                 double[] currFeatures = inputFrames[inputIdx].Features;
-                newCol[N - 1] = EuclideanDistance(templateFrames[N - 1].Features, inputFrames[inputIdx].Features) + currCol[N - 1];
 
-                double minDistance = (currCol[N - 1] < currCol[N - 2] ? currCol[N - 1] : currCol[N - 2]);   // Min(currCol[N-1], currCol[N-2])
-                newCol[N - 2] = EuclideanDistance(templateFrames[N - 2].Features, inputFrames[inputIdx].Features) + minDistance;
-
-                for (int templateIdx = 0; templateIdx + 2 < N; ++templateIdx)
+                for (int templateIdx = Math.Max(0, startIdx - 2); templateIdx <= Math.Min(N - 1, endIdx + 2); ++templateIdx)
                 {
-                    minDistance = currCol[templateIdx];   // Stretching
-
-                    if (minDistance > currCol[templateIdx + 1])   // One by One Matching
-                        minDistance = currCol[templateIdx + 1];
-
-                    if (minDistance > currCol[templateIdx + 2])   // Shrinking
-                        minDistance = currCol[templateIdx + 2];
-
-                    newCol[templateIdx] = EuclideanDistance(templateFrames[templateIdx].Features, currFeatures) + minDistance;
+                    newCol[templateIdx] = Infinity;
                 }
 
-                // Swapping
+                for (int templateIdx = startIdx; templateIdx <= endIdx; ++templateIdx)
+                {
+                    double minDistance = Infinity;
+
+                    if (templateIdx < N)
+                        minDistance = currCol[templateIdx];
+
+                    if (templateIdx + 1 < N && currCol[templateIdx + 1] < minDistance)
+                        minDistance = currCol[templateIdx + 1];
+
+                    if (templateIdx + 2 < N && currCol[templateIdx + 2] < minDistance)
+                        minDistance = currCol[templateIdx + 2];
+
+                    if (minDistance != Infinity)
+                        newCol[templateIdx] = EuclideanDistance(templateFrames[templateIdx].Features, currFeatures) + minDistance;
+
+                }
+
                 double[] temp = newCol;
                 newCol = currCol;
                 currCol = temp;
             }
+
             return currCol[0];
         }
 
@@ -160,7 +175,7 @@ namespace Recorder.MFCC
                 if (currCol[N - 1] > currCol[N - 2] + threshold)
                     currCol[N - 1] = Infinity;
             }
-            else 
+            else
             {
                 if (currCol[N - 2] > currCol[N - 1] + threshold)
                     currCol[N - 2] = Infinity;
